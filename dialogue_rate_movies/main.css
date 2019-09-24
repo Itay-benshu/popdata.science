@@ -1,0 +1,124 @@
+/* 13. Basic Styling with CSS */
+body, html {
+height:100%;
+margin:0;
+}
+
+svg {
+    height:100%;
+    width:100;
+}
+/* Style the lines by removing the fill and applying a stroke */
+.line {
+    fill: none;
+    stroke-width: 3;
+}
+
+  pointer-events: all;
+}
+
+/* Style the dots by assigning a fill and stroke */
+.dot {
+    stroke-width:3;
+}
+
+  .focus circle {
+  fill: none;
+  stroke: steelblue;
+}
+    
+.d3-tip {
+  line-height: 1;
+  padding: 6px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  border-radius: 4px;
+  font-size: 12px;
+}
+    
+.previewLine {
+    stroke-width:1.5px;
+    stroke-dasharray:3;
+}
+    
+.vid-container {
+    width:640px;
+}
+
+video {
+    width:100%;
+}
+
+svg {
+    overflow:visible;
+}
+    
+.container {
+  position: absolute;
+}
+
+.extremaVideoContainer {
+width: 100px;
+height:80px;
+transition:width 300ms ease-in-out, height 300ms ease-in-out,x 300ms ease-in-out, height 300ms ease-in-out,y 300ms ease-in-out, height 300ms ease-in-out;
+position:relative;
+}
+    
+.extremaVideoContainer.playing {
+ height: 300px;
+ width: 600px;
+ z-index:10;
+}
+
+.extremaVideo {
+    position:absolute;
+    top:0;
+    left:0;
+    border-radius:10px;
+}
+
+.overlay {
+    transition: opacity 400ms ease-in-out;
+    opacity:0;
+    position:absolute;
+    pointer-events: none;
+    background-color:black;
+}
+    
+.overlay.active {
+    display:block;
+    z-index:2;
+    opacity:0.5;
+}
+
+.center {
+    text-align: center;
+    width: auto;
+}
+
+text {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.glideContainer {
+    text-align:center;
+    margin:0 auto;
+    background-color:black;
+}
+
+
+.poster {
+    transition: max-height 200ms ease-in-out;
+    opacity:0.5;
+    max-height:150px;
+}
+
+.glide__slide--active .poster {
+    opacity:1;
+}
+
+.glide__slide {
+    margin-top:auto;
+    margin-bottom:auto;
+}
+

@@ -1,0 +1,30 @@
+<link rel='stylesheet' type='text/css' href='/post/work1/main.css'>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+<!-- Required Core Stylesheet -->
+<link rel="stylesheet" href="glide/css/glide.core.min.css">
+<!-- Optional Theme Stylesheet -->
+<link rel="stylesheet" href="glide/css/glide.theme.min.css">
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="/post/work1/d3-tip.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+<script src="/post/work1/main.js"></script>
+<div class='glideContainer'>
+  <div class="glide">
+  <div class="glide__track" data-glide-el="track">
+    <ul class="glide__slides">
+    </ul>
+  </div>
+  <div class="glide__arrows" data-glide-el="controls">
+    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+  </div>
+</div>
+</div>
+
+<div class='container' onclick='overlayClicked()'>
+    <div class='overlay'></div>
+</div>
